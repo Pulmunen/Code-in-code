@@ -1,0 +1,79 @@
+:root {
+    --main: ff6666;
+    --text: #333;
+    --base-colour: rgb(0, 0, 138);
+    --animation-colour: rgb(255, 153, 0); 
+    --base-size: 1em;
+    --animation-size-small: 0.6em;
+    --animation-size-large:1.5em;
+    --animation-rule-colour:rgb(51, 153, 255);
+    --style-rule-colour:rgb(147, 209, 2);
+    --animated-base-colour: rgb(102, 0, 102);
+    --animated-animation-colour: rgb(243,0,244);
+    --animation-letter-spacing:0.8em;
+    --base-letter-spacing:inherit;
+}
+
+
+body {
+    margin:0;
+    box-sizing:border-box;
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;    
+    color:var(--text);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+    color:var(--main);
+}
+
+li {
+    list-style-type:none;
+}
+.code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1rem;
+}
+
+main{
+display:flex;
+flex-wrap:wrap;
+justify-content: space-evenly;
+}
+
+.rule-container {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    min-height: 320px;
+    padding: 0 0 0 30px;
+    border: solid 1px #333;
+    margin:0;
+    width:45%;
+}
+
+.animation-rules{
+    color:var(--animation-rule-colour);
+}
+
+.style-rules{
+    color:var(--style-rule-colour);
+}
+
+.styles-container{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    height:100%;
+    padding:0;
+    margin:0;
+}
+
+.changer{
+    color:var(--transition-colour);
+}
+
+

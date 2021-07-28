@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .base-selector{
+    transition: all 0.5s;
+    transition-delay: 0.4s;
+    transition-timing-function: ease-in;
+    color: var(--base-colour);
+    font-size: var(--base-size);
+    letter-spacing:var(--base-letter-spacing);
+}
+
+.base-selector:hover,
+.base-selector:focus,
+.base-selector:active {
+    color: var(--animation-colour);
+    font-size: var(--animation-size-large);
+    letter-spacing: var(--animation-letter-spacing);
+}
+
+</style>
+</head>
+<body>
+    <main>
+        <div id="test"></div>
+        <div class="rule-container">
+            <h3 class="base-selector" >Transition longhand</h3>
+            <div class="styles-container">
+                <p class='code style-rules'></p>
+                <p class='code animation-rules'></p>
+            </div>
+        </div>
+        <div class="rule-container">
+            <h3 class="base-selector" >Transition shorthand</h3>
+            <div class="styles-container">
+                <p class='code style-rules'></p>
+                <p class='code animation-rules'></p>
+            </div>
+        </div>
+    </main>
+    <script src='./components/Transitions.js'></script>
+</body>
+</html>
