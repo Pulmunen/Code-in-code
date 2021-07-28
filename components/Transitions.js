@@ -61,7 +61,9 @@ const isSameDomain = (styleSheet) => {
   
 const compStyles = getComputedStyle(transitionTarget)   
 
+window.addEventListener('load', transitionAnim)
 transitionTarget.addEventListener("transitionend",  transitionAnim);
+
 function transitionAnim(){
     let stylesArr=[]
 
@@ -70,5 +72,5 @@ function transitionAnim(){
     stylesArr.push(`letter-spacing: ${compStyles.getPropertyValue('letter-spacing')}`)
     
     styleRules.innerHTML = stylesArr.join(`; </br>`) 
-    styleRules.classList.toggle('changer')
+    styleRules.classList.toggle('style-rules-colour')
 }
